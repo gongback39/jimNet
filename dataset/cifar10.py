@@ -35,7 +35,7 @@ def cifar10_train():
     batch = []
     batch_num = 5
     for i in range(batch_num):
-        batch.append(unpickle("./cifar-10-batches-py/data_batch_" + str((i+1))))
+        batch.append(unpickle("./dataset/cifar-10-batches-py/data_batch_" + str((i+1))))
 
     for i in range(batch_num):
         batch[i] = makeDf(batch[i])
@@ -55,7 +55,7 @@ def cifar10_train():
 
 # call test data
 def cifar10_test():
-    test_batch = unpickle("./cifar-10-batches-py/test_batch")
+    test_batch = unpickle("./dataset/cifar-10-batches-py/test_batch")
 
     test_batch = makeDf(test_batch)
     
