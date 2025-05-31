@@ -1,7 +1,7 @@
 import argparse
 import numpy as np
 from tqdm import tqdm
-from dataset.cifar10 import cifar_train, cifar_test
+from dataset.cifar10 import cifar10_train, cifar10_test
 from structs.function import loss_functions
 from structs.batch import BatchLoader
 from structs.optim import Adam
@@ -117,8 +117,8 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    train_data, train_label = cifar_train()
-    test_data, test_label = cifar_test()
+    train_data, train_label = cifar10_train()
+    test_data, test_label = cifar10_test()
 
     model = Model()
     criterion = loss_functions['CE']
