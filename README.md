@@ -14,6 +14,7 @@ python MNIST_DNN.py
 file: cifar10_CNN.py
 
 download dataset: https://www.cs.toronto.edu/~kriz/cifar.html
+| download files on dataset(folder)
 
 running example:
 ```
